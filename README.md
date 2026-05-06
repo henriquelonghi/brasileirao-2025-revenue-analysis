@@ -41,29 +41,7 @@ Ao contrário do esperado, rodadas finais e jogos decisivos não geram maior bil
 
 ## Demonstração
 
-> 📹 [Assista ao dashboard em funcionamento](#) 
-
----
-
-## Estrutura do Repositório
-
-```
-brasileirao-2025-revenue-analysis/
-│
-├── README.md
-├── queries.sql         # Todas as consultas SQL com comentários e insights
-└── data/
-    └── campeonato-brasileiro-full.csv
-```
-
----
-
-## Como Reproduzir
-
-1. Baixe o dataset no [Kaggle](https://www.kaggle.com/datasets/adaoduque/campeonato-brasileiro-de-futebol)
-2. Importe o arquivo `.csv` no SQLite (recomendado: [DB Browser for SQLite](https://sqlitebrowser.org/))
-3. Execute as queries do arquivo `queries.sql` na ordem numerada
-4. Conecte o Power BI no arquivo `.db` gerado para reproduzir o dashboard
+> 📹 [Assista ao dashboard em funcionamento](https://youtu.be/9vpl9Zlb44I) 
 
 ---
 
