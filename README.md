@@ -41,7 +41,7 @@ Ao contrário do esperado, rodadas finais e jogos decisivos não geram maior bil
 
 ## Demonstração
 
-> 📹 [Assista ao dashboard em funcionamento]([https://youtu.be/9vpl9Zlb44I](https://youtu.be/7vPSlt39rho)) 
+> 📹 [Assista ao dashboard em funcionamento](https://www.youtube.com/watch?v=7vPSlt39rho) 
 
 ---
 
