@@ -1,12 +1,9 @@
--- ============================================================
 -- Análise de Renda de Bilheteria — Brasileirão Série A 2025
 -- Autor: Henrique Bordin Longhi
 -- Ferramenta: SQLite
 -- Dataset: Campeonato Brasileiro de Futebol (Kaggle)
--- ============================================================
 
 
--- ------------------------------------------------------------
 -- 1. RECONHECIMENTO DO DATASET
 -- Verificação dos anos com renda de bilheteria disponível
 -- Conclusão: apenas a temporada 2025 possui dados de arrecadação
@@ -24,8 +21,7 @@ ORDER BY ano DESC;
 -- ------------------------------------------------------------
 -- 2. VISÃO GERAL DA TEMPORADA 2025
 -- Total de jogos, arrecadação total, média e extremos
--- Insight: a diferença entre o jogo mais e menos lucrativo
--- é de quase 97x — concentração extrema de renda
+-- Insight: a diferença entre o jogo mais e menos lucrativo é de quase 97x 
 -- ------------------------------------------------------------
 
 SELECT 
@@ -43,7 +39,7 @@ WHERE arrecadacao IS NOT NULL;
 -- Todos os jogos ordenados por renda decrescente
 -- Insight: dos 10 jogos mais lucrativos, todos têm o Flamengo
 -- como mandante. O primeiro jogo sem o Flamengo aparece só
--- na posição 12 (Santos x Vasco — R$ 4,3 milhões)
+-- na posição 12 (Santos x Vasco arrecadando R$ 4,3 milhões)
 -- ------------------------------------------------------------
 
 SELECT 
@@ -60,10 +56,10 @@ ORDER BY arrecadacao DESC;
 -- ------------------------------------------------------------
 -- 4. RECEITA TOTAL E MÉDIA POR TIME MANDANTE
 -- Insights:
--- • Flamengo gerou R$ 81,7 Mi — quase 50% a mais que o 2º (Corinthians R$ 54 Mi)
--- • Flamengo sozinho superou Vasco + São Paulo + Grêmio + Bahia juntos
--- • SP e RJ concentram ~45% de toda a receita do campeonato
--- • Diferença entre 1º (Flamengo) e último (Bragantino) é de 23x
+-- Flamengo gerou R$ 81,7 Mi — quase 50% a mais que o 2º (Corinthians R$ 54 Mi)
+-- Flamengo sozinho superou Vasco + São Paulo + Grêmio + Bahia juntos
+-- SP e RJ concentram ~45% de toda a receita do campeonato
+-- Diferença entre 1º (Flamengo) e último (Bragantino) é de 23x
 -- ------------------------------------------------------------
 
 SELECT 
@@ -106,7 +102,7 @@ ORDER BY media_arrecadacao DESC;
 -- 6. ARRECADAÇÃO MÉDIA POR RODADA
 -- Insight contraintuitivo: o número da rodada não determina
 -- a arrecadação. A rodada de maior renda foi a 15ª e a de
--- menor foi a 16ª — sem padrão claro. O fator determinante
+-- menor foi a 16ª, sem padrão claro. O fator determinante
 -- é o confronto em si, não o momento do campeonato.
 -- ------------------------------------------------------------
 
@@ -160,8 +156,8 @@ ORDER BY aparicoes_top25 DESC;
 -- ------------------------------------------------------------
 -- 9. TIMES ACIMA DA MÉDIA DO CAMPEONATO (CTE)
 -- Utiliza duas CTEs encadeadas:
--- • media_geral: calcula a média do campeonato inteiro
--- • receita_por_time: calcula a média de cada mandante
+-- media_geral: calcula a média do campeonato inteiro
+-- receita_por_time: calcula a média de cada mandante
 -- Resultado: apenas 8 dos 20 times superam a média geral
 -- ------------------------------------------------------------
 
